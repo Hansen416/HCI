@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BPJS Kesehatan Web App</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <img src="/images/logo.png" alt="BPJS Logo" class="logo">
+        <h1>BPJS Kesehatan</h1>
+      </div>
+      <div class="auth-buttons">
+        <button class="auth-btn" onclick="navigate('masuk')">Masuk</button>
+        <button class="auth-btn" onclick="navigate('daftar')">Daftar</button>
+      </div>
+    </header>
+
+  <!-- Konten Utama -->
+<main class="content">
+    <h2>Fitur Utama</h2>
+    <div class="features">
+      <div class="feature" onclick="navigate('data-kepesertaan')">
+        <div class="icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Logo_BPJS_Kesehatan.png" alt="Logo Data Kepesertaan" class="feature-logo">
+        </div>
+        <p>Data Kepesertaan</p>
+      </div>
+      <div class="feature" onclick="navigate('pembayaran-iuran')">
+        <div class="icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Logo_BPJS_Kesehatan.png" alt="Logo Pembayaran Iuran" class="feature-logo">
+        </div>
+        <p>Pembayaran Iuran</p>
+      </div>
+      <div class="feature" onclick="navigate('pengajuan-klaim')">
+        <div class="icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Logo_BPJS_Kesehatan.png" alt="Logo Pengajuan Klaim" class="feature-logo">
+        </div>
+        <p>Pengajuan Klaim</p>
+      </div>
+      <div class="feature" onclick="navigate('riwayat-pelayanan')">
+        <div class="icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Logo_BPJS_Kesehatan.png" alt="Logo Riwayat Pelayanan" class="feature-logo">
+        </div>
+        <p>Riwayat Pelayanan</p>
+      </div>
+    </div>
+  </main>
+  
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-item" onclick="navigate('home')">Home</div>
+      <div class="footer-item" onclick="navigate('kartu-peserta')">Kartu Peserta</div>
+      <div class="footer-item" onclick="navigate('faq')">FAQ</div>
+      <div class="footer-item" onclick="navigate('profil')">Profil</div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
