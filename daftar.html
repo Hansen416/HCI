@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - Portal Data JKN</title>
+  <link rel="stylesheet" href="/CSS/daftar_styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="/images/icon.jpg" alt="Logo BPJS Kesehatan" class="logo">
+      <h1>Portal Data JKN</h1>
+    </div>
+    <div class="auth-buttons">
+      <a href="login.html">
+        <button class="auth-btn">Login</button>
+      </a>
+    </div>
+  </header>
+
+  <!-- Form Daftar -->
+  <main class="content">
+    <h2>Daftar</h2>
+    <form class="form" action="#" method="POST">
+      <div class="form-group">
+        <label for="fullname">Nama Lengkap *</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Maksimal 100 karakter" maxlength="100" required>
+      </div>
+      <div class="form-group">
+        <label for="ktp">Nomor KTP/SIM/KITAS *</label>
+        <input type="text" id="ktp" name="ktp" placeholder="16 karakter" maxlength="16" required>
+      </div>
+      <div class="form-group">
+        <label for="bpjs">Nomor Kartu BPJS Kesehatan *</label>
+        <input type="text" id="bpjs" name="bpjs" placeholder="13 karakter" maxlength="13" required>
+      </div>
+      <div class="form-group">
+        <label for="npwp">NPWP</label>
+        <input type="text" id="npwp" name="npwp" placeholder="xx.xxx.xxx.x-xxx.xxx" pattern="\d{2}\.\d{3}\.\d{3}\.\d-\d{3}\.\d{3}" title="Format: 12.345.678.9-999.999">
+      </div>
+      <div class="form-group">
+        <label for="nim">NIM (Mahasiswa) *</label>
+        <input type="text" id="nim" name="nim" placeholder="5 - 50 karakter" minlength="5" maxlength="50" required>
+      </div>
+      <div class="form-group">
+        <label for="occupation">Pekerjaan *</label>
+        <input type="text" id="occupation" name="occupation" placeholder="Pekerjaan" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Nomor Handphone *</label>
+        <input type="text" id="phone" name="phone" placeholder="contoh: 081155667788" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="contoh: example@gmail.com" required>
+      </div>
+      <div class="form-group">
+        <label for="username">Username *</label>
+        <input type="text" id="username" name="username" placeholder="[username]-pdjkn" required>
+        <small>Username pilihan anda</small>
+      </div>
+      <button type="submit" class="auth-btn">Daftar</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-item">Tentang Kami</div>
+    <div class="footer-item">Bantuan</div>
+    <div class="footer-item">Kontak</div>
+  </footer>
+</body>
+</html>
