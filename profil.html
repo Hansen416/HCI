@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil BPJS Kesehatan</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #2d4aab;
+            margin: 0;
+        }
+
+        .main-container {
+            display: flex;
+            margin: 20px;
+            height: calc(100vh - 80px); /* Mengatur tinggi halaman */
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 20%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            height: 100%;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .sidebar ul li a.active,
+        .sidebar ul li a:hover {
+            background-color: #2d4aab;
+            color: #fff;
+        }
+
+        /* Content Section */
+        .content {
+            width: 75%;
+            margin-left: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow-y: auto;
+            height: 100%; /* Agar konten mengisi sisa ruang */
+            display: none; /* Hidden by default */
+        }
+
+        .active-content {
+            display: block; /* Show active content */
+        }
+
+        .content-header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content-header img {
+            width: 50%; /* Mengatur gambar agar lebih kecil */
+            max-width: 400px; /* Max width agar tidak terlalu besar */
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .content-header h2 {
+            font-size: 32px;
+            color: #2d4aab;
+            margin: 0;
+        }
+
+        .content-body h3 {
+            font-size: 20px;
+            color: #2d4aab;
+            margin-top: 20px;
+        }
+
+        .content-body h4 {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .content-body p,
+        .content-body ol {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        .content-body ol li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="breadcrumb">
+            <span>Beranda</span> / <span>Profil</span> / <span>Visi dan Misi</span>
+        </div>
+        <h1>Profil BPJS Kesehatan</h1>
+    </header>
+
+    <main class="main-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" onclick="showContent('visi')">Visi dan Misi</a></li>
+                <li><a href="#" onclick="showContent('struktur')">Struktur Organisasi</a></li>
+                <li><a href="#" onclick="showContent('sejarah')">Sejarah</a></li>
+                <li><a href="#" onclick="showContent('hukum')">Landasan Hukum</a></li>
+                <li><a href="#" onclick="showContent('tugas')">Tugas dan Fungsi</a></li>
+            </ul>
+        </nav>
+
+        <!-- Content -->
+        <section class="content" id="visi">
+            <div class="content-header">
+                <img src="visimisi.jpeg" alt="Visi dan Misi BPJS">
+                <h2>Visi dan Misi BPJS Kesehatan</h2>
+            </div>
+            <div class="content-body">
+                <h3>Visi BPJS Kesehatan</h3>
+                <p>
+                    Menjadi badan penyelenggara yang dinamis, akuntabel, dan terpercaya untuk mewujudkan jaminan
+                    kesehatan yang berkualitas, berkelanjutan, berkeadilan, dan inklusif.
+                </p>
+                <h4>Misi BPJS Kesehatan</h4>
+                <ol>
+                    <li>Meningkatkan kualitas layanan kepada peserta melalui layanan terintegrasi berbasis teknologi informasi.</li>
+                    <li>Menjaga keberlanjutan Program JKN-KIS dan menyimbangkan antara dana sosial dan biaya manfaat yang terkendali.</li>
+                    <li>Memberikan jaminan kesehatan yang berkeadilan dan inklusif mencakup seluruh penduduk Indonesia.</li>
+                    <li>Memperkuat engagement dengan meningkatkan sinergi dan kolaborasi pemangku kepentingan dalam mengimplementasikan program JKN-KIS.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="content" id="struktur">
+            <div class="content-header">
+                <img src="struktur-organisasi-image.jpg" alt="Struktur Organisasi BPJS">
+                <h2>Struktur Organisasi BPJS Kesehatan</h2>
+            </div>
+            <div class="content-body">
+                <h3>Struktur Organisasi BPJS Kesehatan</h3>
+                <p>Deskripsi singkat mengenai struktur organisasi BPJS Kesehatan.</p>
+            </div>
+        </section>
+
+        <section class="content" id="sejarah">
+            <div class="content-header">
+                <img src="sejarah-image.jpg" alt="Sejarah BPJS">
+                <h2>Sejarah BPJS Kesehatan</h2>
+            </div>
+            <div class="content-body">
+                <h3>Sejarah BPJS Kesehatan</h3>
+                <p>Informasi mengenai sejarah BPJS Kesehatan.</p>
+            </div>
+        </section>
+
+        <section class="content" id="hukum">
+            <div class="content-header">
+                <img src="hukum-image.jpg" alt="Landasan Hukum BPJS">
+                <h2>Landasan Hukum BPJS Kesehatan</h2>
+            </div>
+            <div class="content-body">
+                <h3>Landasan Hukum BPJS Kesehatan</h3>
+                <p>Penjelasan tentang landasan hukum yang mendasari BPJS Kesehatan.</p>
+            </div>
+        </section>
+
+        <section class="content" id="tugas">
+            <div class="content-header">
+                <img src="tugas-image.jpg" alt="Tugas dan Fungsi BPJS">
+                <h2>Tugas dan Fungsi BPJS Kesehatan</h2>
+            </div>
+            <div class="content-body">
+                <h3>Tugas dan Fungsi BPJS Kesehatan</h3>
+                <p>Deskripsi tentang tugas dan fungsi BPJS Kesehatan.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function showContent(id) {
+            // Hide all content sections
+            var sections = document.querySelectorAll('.content');
+            sections.forEach(function(section) {
+                section.classList.remove('active-content');
+            });
+
+            // Show the selected content
+            var activeSection = document.getElementById(id);
+            if (activeSection) {
+                activeSection.classList.add('active-content');
+            }
+        }
+
+        // Show the first content by default (Visi and Misi)
+        showContent('visi');
+    </script>
+</body>
+</html>
