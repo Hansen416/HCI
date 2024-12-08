@@ -10,9 +10,67 @@
             background-color: #f0f4f8;
             margin: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: white;
+            color: #2d4aab;
+            width: 100%;
+            padding: 10px 40px; /* Memberikan padding yang lebih besar untuk memberi ruang */
+            display: flex;
+            align-items: center; /* Menyusun elemen secara horizontal */
+            justify-content: flex-start; /* Mengatur elemen ke kiri */
+        }
+
+        .header img {
+            max-width: 50px; /* Ukuran logo */
+            margin-right: 15px; /* Memberi jarak antara logo dan tulisan */
+            margin-left: 30px; /* Menambahkan margin kiri untuk menggeser ikon ke kanan */
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 30px; /* Mengecilkan ukuran font judul */
+            margin-left: 10px; /* Memberikan margin kiri tambahan untuk menggeser tulisan ke kanan */
+        }
+
+        /* Menu Styles */
+        .menu {
+            display: flex;
+            justify-content: space-between; /* Menjaga jarak merata antara elemen menu */
+            width: 100%; /* Mengatur lebar menu menjadi 100% dari lebar layar */
+            background-color: #f0f4f8; /* Warna latar belakang menu */
+            padding: 10px 0; /* Padding vertikal agar elemen tidak terlalu rapat */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus di bawah menu */
+        }
+
+        /* Mengatur elemen menu */
+        .menu a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #2d4aab;
+            padding: 0 20px; /* Memberikan jarak antar menu */
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Menggeser Home ke kanan sedikit */
+        .menu a[href="index.html"] {
+            margin-left: 10px; /* Memberikan margin kiri untuk menggeser Home ke kanan */
+        }
+
+        /* Menggeser Bantuan ke kiri sedikit */
+        .menu a[href="bantuan.html"] {
+            margin-right: 70px; /* Memberikan margin kanan untuk menggeser Bantuan ke kiri */
+        }
+
+        .menu a[href="profil.html"] {
+            margin-left: 70px; /* Memberikan margin kiri untuk menggeser Home ke kanan */
         }
 
         /* Login Container */
@@ -23,6 +81,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 400px;
+            margin-top: 20px;
         }
 
         /* Logo Styles */
@@ -52,7 +111,7 @@
 
         /* Button Styles */
         .login-container button {
-            background: #007b5e;
+            background: #2d4aab;
             color: #fff;
             border: none;
             padding: 10px 15px;
@@ -62,7 +121,7 @@
         }
 
         .login-container button:hover {
-            background: #005b47;
+            background: #004A80;
         }
 
         /* Helper Links */
@@ -72,7 +131,7 @@
         }
 
         .helper-links a {
-            color: #007b5e;
+            color: #2d4aab;
             text-decoration: none;
         }
 
@@ -82,12 +141,26 @@
     </style>
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="header">
+        <img src="/images/icon.jpg" alt="Logo BPJS">
+        <h1>BPJS Kesehatan</h1>
+    </header>
+
+    <!-- Menu Section -->
+    <nav class="menu">
+        <a href="profil.html">Profil</a>
+        <a href="index.html">Home</a>
+        <a href="bantuan.html">Bantuan</a>
+    </nav>
+
+    <!-- Login Form -->
     <div class="login-container">
         <img src="/images/icon.jpg" alt="Logo BPJS">
         <h1>Login BPJS</h1>
         <form>
             <div class="input-field">
-                <input type="NIK" placeholder="Masukkan NIK" required>
+                <input type="text" placeholder="Masukkan NIK" required>
             </div>
             <div class="input-field">
                 <input type="password" placeholder="Masukkan Password" required>

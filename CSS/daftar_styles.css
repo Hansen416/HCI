@@ -32,7 +32,7 @@
   .auth-btn {
     padding: 10px 20px;
     font-size: 14px;
-    background-color: #28a745; /* Warna hijau */
+    background-color: #218838; /* Warna hijau */
     color: white;
     border: none;
     border-radius: 8px;
@@ -85,7 +85,7 @@
   }
   
   .form-group input:focus {
-    border-color: #28a745; /* Fokus border hijau */
+    border-color: #004A80; /* Fokus border hijau */
   }
   
   small {
@@ -109,6 +109,45 @@
   }
   
   .footer-item:hover {
-    color: #28a745; /* Hijau saat hover */
+    color: #004A80; /* Hijau saat hover */
   }
   
+/* Footer Styles */
+.footer {
+  display: flex;
+  justify-content: space-between; /* Mengatur posisi kiri, tengah, kanan */
+  align-items: center; /* Vertikal sejajar */
+  background-color: #004A80; /* Warna biru */
+  color: #fff; /* Tulisan putih */
+  padding: 15px 30px; /* Jarak dalam footer */
+}
+
+.footer-section {
+  flex: 1; /* Mengisi ruang secara proporsional */
+  text-align: center; /* Posisi tengah secara default */
+}
+
+.footer-left {
+  text-align: left; /* Teks di kiri */
+  margin-left: 50px; /* Geser ke kanan */
+}
+
+.footer-right {
+  text-align: right; /* Teks di kanan */
+  margin-right: 50px; /* Geser ke kiri dengan mengurangi margin */
+}
+
+.footer-link {
+  color: #fff; /* Warna putih untuk tautan */
+  text-decoration: none; /* Hilangkan garis bawah */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+
+
+

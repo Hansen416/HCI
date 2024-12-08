@@ -13,11 +13,11 @@
       <img src="/images/icon.jpg" alt="Logo BPJS Kesehatan" class="logo">
       <h1>Portal Data JKN</h1>
     </div>
-    <div class="auth-buttons">
+    <nav class="nav-menu">
       <a href="login.html">
         <button class="auth-btn">Login</button>
       </a>
-    </div>
+    </nav>
   </header>
 
   <!-- Form Daftar -->
@@ -61,15 +61,30 @@
         <input type="text" id="username" name="username" placeholder="[username]-pdjkn" required>
         <small>Username pilihan anda</small>
       </div>
+      <div class="form-group">
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" minlength="8" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Konfirmasi Password *</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Ulangi password" minlength="8" required>
+      </div>
       <button type="submit" class="auth-btn">Daftar</button>
     </form>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-item">Tentang Kami</div>
-    <div class="footer-item">Bantuan</div>
-    <div class="footer-item">Kontak</div>
+    <div class="footer-section footer-left">
+      <a href="profil.html" class="footer-link">Profil</a>
+    </div>
+    <div class="footer-section footer-center">
+      <a href="index.html" class="footer-link">Home</a>
+    </div>
+    <div class="footer-section footer-right">
+      <a href="bantuan.html" class="footer-link">Bantuan</a>
+    </div>
   </footer>
+  
 </body>
 </html>

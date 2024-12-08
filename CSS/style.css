@@ -9,7 +9,7 @@
   body {
     font-family: Arial, sans-serif;
     height: 100vh;
-    background-image: url('../images/background.png');
+    background-image: url('../images/Rs.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@
   .header h1 {
     font-size: 20px; /* Ukuran font lebih kecil */
     margin: 0; /* Menghilangkan margin tambahan */
-    color: #4CAF50; /* Warna teks hijau agar kontras dengan latar belakang putih */
+    color: #004A80; /* Warna teks hijau agar kontras dengan latar belakang putih */
   }
   
   /* Tombol Masuk/Daftar */
@@ -64,7 +64,7 @@
   .auth-btn {
     padding: 8px 15px;
     font-size: 14px;
-    background-color: #4CAF50; /* Tombol hijau untuk kontras dengan header putih */
+    background-color: #004A80; /* Tombol hijau untuk kontras dengan header putih */
     color: white;
     border: none;
     border-radius: 8px;
@@ -73,7 +73,7 @@
   }
   
   .auth-btn:hover {
-    background-color: #45a049; /* Warna hijau sedikit lebih gelap saat hover */
+    background-color: #004A80; /* Warna hijau sedikit lebih gelap saat hover */
   }
   
   /* Konten Utama */
@@ -103,7 +103,7 @@
   .feature .icon {
     width: 100px;
     height: 100px;
-    background-color: #4CAF50;
+    background-color: #004A80;
     border-radius: 50%;
     margin: 0 auto;
     display: flex;
@@ -133,7 +133,7 @@
   }
   
   .footer-item {
-    color: #4CAF50; /* Warna teks hijau untuk footer */
+    color: #004A80; /* Warna teks hijau untuk footer */
     font-size: 16px;
     text-align: center;
     cursor: pointer;
@@ -141,7 +141,7 @@
   }
   
   .footer-item:hover {
-    color: #45a049; /* Warna hijau muda saat hover */
+    color: #004A80; /* Warna hijau muda saat hover */
   }
   
   /* Responsif untuk Tablet dan Mobile */

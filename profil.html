@@ -32,6 +32,41 @@
             margin: 0;
         }
 
+        /* Menu Styles */
+        .menu {
+            display: flex;
+            justify-content: space-between; /* Membuat elemen berada di kiri, tengah, dan kanan */
+            background-color: #f0f4f8;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #2d4aab;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Menu specific adjustments */
+        .menu a:nth-child(1) {
+            margin-left: 60px; /* Home ke kiri */
+        }
+
+        .menu a:nth-child(2) {
+            margin-left: auto; /* Profil ke tengah */
+            margin-right: auto; /* Profil ke tengah */
+            margin-left: 540px; /* Geser Profil ke kanan sedikit */
+        }
+
+        .menu a:nth-child(3) {
+            margin-right: 60px; /* Bantuan ke kanan */
+        }
+
+
         .main-container {
             display: flex;
             margin: 20px;
@@ -134,12 +169,16 @@
 </head>
 <body>
     <header class="header">
-        <div class="breadcrumb">
-            <span>Beranda</span> / <span>Profil</span> / <span>Visi dan Misi</span>
-        </div>
         <h1>Profil BPJS Kesehatan</h1>
     </header>
 
+    <!-- Menu Section -->
+    <nav class="menu">
+        <a href="profil.html">Profil</a>
+        <a href="index.html">Home</a>
+        <a href="bantuan.html">Bantuan</a>
+    </nav>
+    
     <main class="main-container">
         <!-- Sidebar -->
         <nav class="sidebar">
@@ -176,7 +215,7 @@
 
         <section class="content" id="struktur">
             <div class="content-header">
-                <img src="struktur-organisasi-image.jpg" alt="Struktur Organisasi BPJS">
+                <img src="/images/struktur.jpg" alt="Struktur Organisasi BPJS">
                 <h2>Struktur Organisasi BPJS Kesehatan</h2>
             </div>
             <div class="content-body">
@@ -187,7 +226,7 @@
 
         <section class="content" id="sejarah">
             <div class="content-header">
-                <img src="sejarah-image.jpg" alt="Sejarah BPJS">
+                <!-- <img src="sejarah-image.jpg" alt="Sejarah BPJS"> -->
                 <h2>Sejarah BPJS Kesehatan</h2>
             </div>
             <div class="content-body">
@@ -198,7 +237,7 @@
 
         <section class="content" id="hukum">
             <div class="content-header">
-                <img src="hukum-image.jpg" alt="Landasan Hukum BPJS">
+                <!-- <img src="hukum-image.jpg" alt="Landasan Hukum BPJS"> -->
                 <h2>Landasan Hukum BPJS Kesehatan</h2>
             </div>
             <div class="content-body">
@@ -209,7 +248,7 @@
 
         <section class="content" id="tugas">
             <div class="content-header">
-                <img src="tugas-image.jpg" alt="Tugas dan Fungsi BPJS">
+                <!-- <img src="tugas-image.jpg" alt="Tugas dan Fungsi BPJS"> -->
                 <h2>Tugas dan Fungsi BPJS Kesehatan</h2>
             </div>
             <div class="content-body">
