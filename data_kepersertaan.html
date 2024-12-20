@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('/images/Rs.jpg'); /* Menambahkan gambar latar belakang */
+            background-size: cover; /* Membuat gambar latar belakang memenuhi seluruh halaman */
+            /* background-position: center; Memposisikan gambar di tengah */
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Menambahkan transparansi untuk menggelapkan gambar */
+            z-index: -1; /* Menempatkan efek gelap di belakang konten */
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: white;
+            color: #2d4aab;
+            width: 100%;
+            padding: 10px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .header img {
+            max-width: 50px;
+            margin-right: 15px;
+            margin-left: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 30px;
+            margin-left: 10px;
+        }
+
+        /* Menu Styles */
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #f0f4f8;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #2d4aab;
+            padding: 0 20px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .menu a[href="index.html"] {
+            margin-left: 10px;
+        }
+
+        .menu a[href="bantuan.html"] {
+            margin-right: 70px;
+        }
+
+        .menu a[href="profil.html"] {
+            margin-left: 70px;
+        }
+
+        /* Data Keanggotaan Container */
+        .datakeanggotaan-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+            margin-top: 20px;
+        }
+
+        /* Input Fields */
+        .input-field {
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .input-field input {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Button Styles */
+        .datakeanggotaan-container button {
+            background: #2d4aab;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .datakeanggotaan-container button:hover {
+            background: #004A80;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <img src="/images/icon.jpg" alt="Logo BPJS">
+        <h1>BPJS Kesehatan</h1>
+    </header>
+
+    <!-- Menu Section -->
+    <nav class="menu">
+        <a href="profil.html">Profil</a>
+        <a href="index.html">Home</a>
+        <a href="bantuan.html">Bantuan</a>
+    </nav>
+
+    <!-- Data Keanggotaan Form -->
+    <div class="datakeanggotaan-container">
+        <h1>Data Keanggotaan</h1>
+        <form>
+            <div class="input-field">
+                <input type="text" placeholder="Masukkan NIK" required>
+            </div>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>

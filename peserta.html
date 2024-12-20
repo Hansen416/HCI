@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kartu Peserta BPJS</title>
+  <link rel="stylesheet" href="/CSS/peserta_style.css">
+</head>
+<body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <img src="/images/icon.jpg" alt="BPJS Logo" class="logo">
+          <h1>Kartu Peserta</h1>
+        </div>
+        <div class="auth-buttons">
+          <button class="auth-btn" onclick="window.location.href='login.html'">Masuk</button>
+          <button class="auth-btn" onclick="window.location.href='daftar.html'">Daftar</button>
+        </div>
+      </header>
+  
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="nav-item" onclick="window.location.href='bantuan.html'">Bantuan</div>
+        <div class="nav-item" onclick="window.location.href='index.html'">Home</div>
+        <div class="nav-item" onclick="window.location.href='profil.html'">Profil</div>
+      </nav>
+  
+      <!-- Konten Utama -->
+      <main class="content">
+        <h2>Kartu Peserta Anda</h2>
+        <div class="features">
+          <div class="feature">
+            <div class="icon">
+              <img src="/images/data_peserta.png" alt="Logo Kartu Peserta" class="feature-logo">
+            </div>
+            <p>Kartu BPJS Anda:</p>
+            <div style="display: flex; justify-content: center; align-items: center;">
+              <img src="/images/kartu.png" alt="Kartu BPJS" style="width: 100%; max-width: 400px; border-radius: 8px;">
+            </div>
+          </div>
+        </div>
+      </main>
+  
+    </div>
+  </body>  
+</html>

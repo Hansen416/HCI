@@ -26,17 +26,17 @@
     grid-template-rows: auto 1fr auto;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Transparansi untuk kontras */
+    background: rgba(0, 0, 0, 0.6);
   }
   
-  /* Header Styling - Warna Putih */
-.header {
+  /* Header Styling */
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white; /* Mengubah latar belakang menjadi putih */
-    padding: 10px 20px; /* Padding lebih kecil */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk memberi efek kedalaman */
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .header-left {
@@ -45,17 +45,16 @@
   }
   
   .header .logo {
-    width: 80px; /* Ukuran logo lebih kecil */
-    margin-right: 15px; /* Mengurangi jarak antara logo dan teks */
+    width: 80px;
+    margin-right: 15px;
   }
   
   .header h1 {
-    font-size: 20px; /* Ukuran font lebih kecil */
-    margin: 0; /* Menghilangkan margin tambahan */
-    color: #004A80; /* Warna teks hijau agar kontras dengan latar belakang putih */
+    font-size: 20px;
+    margin: 0;
+    color: #004A80;
   }
   
-  /* Tombol Masuk/Daftar */
   .auth-buttons {
     display: flex;
     gap: 8px;
@@ -64,7 +63,7 @@
   .auth-btn {
     padding: 8px 15px;
     font-size: 14px;
-    background-color: #004A80; /* Tombol hijau untuk kontras dengan header putih */
+    background-color: #004A80;
     color: white;
     border: none;
     border-radius: 8px;
@@ -73,11 +72,11 @@
   }
   
   .auth-btn:hover {
-    background-color: #004A80; /* Warna hijau sedikit lebih gelap saat hover */
+    background-color: #00345D;
   }
   
   /* Konten Utama */
-.content {
+  .content {
     padding: 40px 60px;
     overflow-y: auto;
     text-align: center;
@@ -90,20 +89,19 @@
   
   .features {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     justify-items: center;
   }
   
   .feature {
     text-align: center;
-    cursor: pointer;
   }
   
   .feature .icon {
     width: 100px;
     height: 100px;
-    background-color: #004A80;
+    background-color: white;
     border-radius: 50%;
     margin: 0 auto;
     display: flex;
@@ -112,7 +110,7 @@
   }
   
   .feature-logo {
-    width: 50%; /* Menyesuaikan ukuran logo dengan ikon */
+    width: 50%;
     height: auto;
   }
   
@@ -122,18 +120,34 @@
     color: white;
   }
   
+  /* Kartu Peserta Styling */
+  .content .kartu {
+    margin-top: 20px;
+    background-color: white;
+    color: black !important;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .content .kartu p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: black !important;
+  }
   
   /* Footer Styling */
   .footer {
     display: flex;
     justify-content: space-around;
-    background-color: white; /* Mengubah latar belakang menjadi putih */
+    background-color: white;
     padding: 15px 0;
-    border-top: 1px solid #ddd; /* Garis pemisah yang lebih ringan */
+    border-top: 1px solid #ddd;
   }
   
   .footer-item {
-    color: #004A80; /* Warna teks hijau untuk footer */
+    color: #004A80;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
@@ -141,7 +155,7 @@
   }
   
   .footer-item:hover {
-    color: #004A80; /* Warna hijau muda saat hover */
+    color: #00345D;
   }
   
   /* Responsif untuk Tablet dan Mobile */
@@ -151,7 +165,7 @@
     }
   
     .features {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       gap: 20px;
     }
   
@@ -178,7 +192,7 @@
       justify-content: flex-start;
     }
   
-    .content {
+    .content {  
       padding: 20px 30px;
     }
   
@@ -193,4 +207,47 @@
     }
   }
   
+  /* Navigation Styling */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 15px 0;
+    border-top: 1px solid #ddd; /* Garis pemisah yang lebih ringan */
+  }
+  
+  .nav-item {
+    color: #004A80;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 45px;
+  }
+  
+  .nav-item:hover {
+    color: #004A80;
+  }
+
+  /* Responsif untuk Tablet dan Mobile */
+@media (max-width: 1024px) {
+    .nav {
+      padding: 10px 20px;
+    }
+  
+    .nav-item {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-item {
+      font-size: 14px;
+    }
+  }
   

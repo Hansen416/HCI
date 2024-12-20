@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #004A80; /* Biru tua */
-    color: white;
+    background-color: white; /* Biru tua */
+    color: #004A80;
     padding: 15px 20px;
   }
   
@@ -94,31 +94,12 @@
   }
   
   /* Footer Styling */
-  .footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #004A80; /* Biru tua */
-    padding: 15px 0;
-    color: white;
-    font-size: 16px;
-  }
-  
-  .footer-item {
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-item:hover {
-    color: #004A80; /* Hijau saat hover */
-  }
-  
-/* Footer Styles */
 .footer {
   display: flex;
   justify-content: space-between; /* Mengatur posisi kiri, tengah, kanan */
   align-items: center; /* Vertikal sejajar */
-  background-color: #004A80; /* Warna biru */
-  color: #fff; /* Tulisan putih */
+  background-color: #f1f1f1; /* Warna abu-abu terang */
+  color: #333; /* Warna teks gelap untuk kontras yang baik */
   padding: 15px 30px; /* Jarak dalam footer */
 }
 
@@ -138,7 +119,7 @@
 }
 
 .footer-link {
-  color: #fff; /* Warna putih untuk tautan */
+  color: #333; /* Warna gelap untuk tautan di footer */
   text-decoration: none; /* Hilangkan garis bawah */
   font-size: 16px;
   font-weight: bold;
@@ -146,7 +127,9 @@
 
 .footer-link:hover {
   text-decoration: underline; /* Garis bawah saat hover */
+  color: #004A80; /* Warna biru pada hover */
 }
+
 
 
 
